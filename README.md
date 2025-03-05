@@ -7,6 +7,6 @@ Thanks for downloading this template!
 ---
 
 - Started: 20.02.25
-- Updated: 22.02.25
+- Updated: 05.03.25
 - Status: work-in-progress
 ---

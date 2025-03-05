@@ -1,4 +1,9 @@
-#hero {
+/* 
+For index.html
+==============
+*/
+
+ #hero {
   background-image: url("../img/card\ \(1\).jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -9,8 +14,74 @@
   border-radius: 10px;
 }
 
+:root{
+  --color1: #7ac0a1;
+}
+
 .center{
   display:flex;
   justify-content: center;
   align-items: center;
 }
+/* ------------------------------------------ */
+
+/* NAVBAR */
+#header{
+  background-color: white;
+}
+
+.navmenu a, .navmenu a:focus {
+  color: #7ac0a1 !important;
+}
+.navmenu a:hover {
+  color: #7ac0a1 !important;
+}
+/* --------------------------------------------- */
+
+/* SECTIONS */
+/* hero */
+.btn-get-started{
+  background-color: #7ac0a1;  
+  color:white;     
+}
+
+#hero .contact-btn{
+  background-color: white;
+  color:#7ac0a1; 
+}
+
+/* about */
+.section-title h2::after {
+  background-color: #7ac0a1;      
+}
+.section-title {
+  padding-bottom:20px;
+}
+
+/* contact */
+.btn-quote{
+  background-color: #7ac0a1;  
+  color:white;   
+  padding:10px;
+  border-radius:10px;   
+}
+.btn-quote:hover, .btn-quote:focus{
+  color:white;   
+}
+/* --------------------------------------------- */
+
+/* FOOTER */
+.footer {
+  background-color: #7ac0a1;      
+}
+
+.footer .footer-links ul a:hover {
+  color:rgb(255, 254, 254); 
+  text-decoration: underline;
+}
+
+.footer .social-links a:hover {
+  color:rgb(255, 254, 254); 
+  border-color: white
+}
+/* --------------------------------------------- */
