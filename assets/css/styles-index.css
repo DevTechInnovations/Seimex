@@ -84,4 +84,16 @@ For index.html
   color:rgb(255, 254, 254); 
   border-color: white
 }
+
+footer a{
+  color:white; 
+}
+footer a:hover{
+  color:white; 
+  text-decoration: underline;
+}
+
+footer .footer-newsletter{
+  margin-bottom:20px; 
+}
 /* --------------------------------------------- */
