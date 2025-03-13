@@ -716,7 +716,6 @@
                 });
               });
             </script>
-            
 
                 </div>
               </div>
@@ -776,12 +775,17 @@
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <p class="m-2">
-            © 2025 SEIMEX
+            © <span id="year"></span> SEIMEX
             <br />
             (Scientific Equipment Importers and Exporters)
             <br />
             <span>All Rights Reserved</span>
           </p>
+          
+          <script>
+            // Get the current year and update the span
+            document.getElementById("year").textContent = new Date().getFullYear();
+          </script>
         </div>
       </div>
     </div>
