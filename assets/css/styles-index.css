@@ -31,7 +31,9 @@ For index.html
 }
 
 .navmenu a, .navmenu a:focus {
-  color: #7ac0a1 !important;
+  /* color: #7ac0a1 !important; */
+  color: #9ab633 !important;
+
 }
 .navmenu a:hover {
   color: #7ac0a1 !important;
