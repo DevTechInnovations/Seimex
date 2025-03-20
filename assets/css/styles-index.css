@@ -74,24 +74,26 @@ For index.html
 
 /* FOOTER */
 .footer {
-  background-color: #7ac0a1;      
+  /* background-color: #7ac0a1;       */
+  background-color: #ffffff;      
+  color:black; 
 }
 
-.footer .footer-links ul a:hover {
-  color:rgb(255, 254, 254); 
+.footer .footer-links ul a{
+  color:rgb(0, 0, 0); 
   text-decoration: underline;
 }
 
 .footer .social-links a:hover {
-  color:rgb(255, 254, 254); 
+  color:rgb(0, 0, 0); 
   border-color: white
 }
 
 footer a{
-  color:white; 
+  color:rgb(0, 0, 0); 
 }
 footer a:hover{
-  color:white; 
+  color:rgb(0, 0, 0); 
   text-decoration: underline;
 }
 

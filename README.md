@@ -7,7 +7,7 @@ Thanks for downloading this template!
 ---
 
 - Started:  20.02.25
-- Updated:  13.03.25
+- Updated:  19.03.25
 - Status:   work-in-progress
 - _branch:  beta-v1.1_
 ---

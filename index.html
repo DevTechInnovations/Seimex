@@ -7,6 +7,10 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
 
+  <!-- 
+    - Started:  20.02.25
+    - Updated:  19.03.25
+  -->
   <title>SEIMEX</title>
   <!-- Favicons -->
   <link href="assets/img/icons/logo.jpg" rel="icon" />
@@ -130,7 +134,7 @@
       <!-- ---------------------------------- -->
 
       <!-- sub-section -->
-      <section id="ops" class="section services-2">
+      <section id="" class="section services-2">
         <div class="container section-title" data-aos="fade-up">
           <p>Business operations</p>
           <i>SEIMEX is engaged in the:</i>
@@ -386,7 +390,7 @@
       </div>
 
       <!-- sub-section -->
-      <section id="gallery" class="portfolio section">
+      <section id="" class="portfolio section">
         <div class="container section-title" data-aos="fade-up">
           <p>Gallery</p>
         </div>
@@ -591,6 +595,7 @@
 
 
     <!-- 6. contact -->
+    <!-- <section id="contact" class="contact section light-background"> -->
     <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
@@ -599,8 +604,20 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
+          <style>
+            #contact .full-height{
+              height:100%; 
+            }
+
+            #contact img{
+              position: relative;
+              height:700px; 
+              width:100%;
+              object-fit: cover;
+            }
+          </style>
           <!-- col1 -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 full-height">
             <div class="row gy-4">
               <div class="col-md-12">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
@@ -619,69 +636,189 @@
                   <p>info@seimex.co.za</p>
                 </div>
               </div>
+
+              <div class="col-md-12">
+                <!-- <img src="./assets/img/Get in touch photo.jpg" alt=""> -->
+                <img src="./assets/img/icons/favicon.png" alt="">
+                <!-- <img src="./assets/img/icons/logo.jpg" alt=""> -->
+              </div>
             </div>
           </div>
 
           <!-- col2 -->
           <div class="col-lg-6">
-            <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
-                </div>
-
-                <div class="col-md-12">
-                  <select class="form-select form-select-sm mb-3" aria-label="Small select example" id="email-subject"
-                    onclick="checkEmailSubject()">
-                    <!-- <option selected>General inquiry</option> -->
-                    <option value="product">Product quote</option>
-                    <option value="general">General inquiry</option>
-                  </select>
-
-                  <select class="form-select" aria-label="Disabled select example" id="product-select">
-                    <option value="Chlorolab 3+ System">Chlorolab 3+ System</option>
-                    <option value="Oxygraph+ System">Oxygraph+ System</option>
-                    <option value="FMS 2+">FMS 2+</option>
-                    <option value="Oxyview 1 System">Oxyview 1 System</option>
-
-                    <option value="Chloroview 1 System">Chloroview 1 System</option>
-                    <option value="Handy PEA+">Handy PEA+</option>
-                    <option value="CL-01">CL-01</option>
-                    <option value="Chlorolab 2+ System">Chlorolab 2+ System</option>
-                  </select>
-                </div>
-
-                <script>
-                  function checkEmailSubject() {
-                    let subject =
-                      document.getElementById("email-subject").value;
-                    let productSelect =
-                      document.getElementById("product-select");
-
-                    if (subject === "general") {
-                      productSelect.setAttribute("disabled", "disabled");
-                    } else {
-                      productSelect.removeAttribute("disabled");
-                    }
-                  }
-                </script>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
+            <div id="contact-form">
+              <form id="contact-form-element" action="https://api.web3forms.com/submit" method="POST" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                <input type="hidden" name="access_key" value="8de7e4bb-2642-490b-8efa-47a6b8dcecaf">
+            
+                <div class="row gy-4">
+                  <label for="">Name</label>
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required />
                   </div>
 
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Surname" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Title (example, Mr)" required />
+                  </div>
+                  <!-- --- -->
+            
+                  <label for="">Contact details</label>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="" placeholder="Your contact number" required />
+                  </div>
+                  <!-- --- -->
+            
+                  <label for="">Company</label>
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Company name" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Department" required />
+                  </div>
+                  <!-- --- -->
+
+                  <label for="">Address</label>
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Country" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="City" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Area code" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Street address" required />
+                  </div>
+                  <!-- --- -->
+
+                  <label for="">What is your planned application?</label>
+                  <!-- <div class="col-md-6"> -->
+                    <!-- <textarea name="" id=""></textarea> -->
+                    <!-- <input type="text" name="name" class="form-control" placeholder="Street address" required /> -->
+                  <!-- </div> -->
+
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="4" placeholder="" required></textarea>
+                  </div>
+                  <!-- --- -->
+
+                  <label for="">Where are you in the purchase process</label>
+                  
+                  <style>
+                    .radio{
+                        width:initial;
+                        display: inline;
+                    }
+
+                    .radio-text{
+                      font-size: 14px;
+                    }
+                </style>
+                  <div class="col-md-12">
+                    <input type="checkbox" name="name" class="form-control radio" placeholder="Street address" required />
+                    <label for="" class="radio-text">Already have funding </label>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="checkbox" name="name" class="form-control radio" placeholder="Street address" required />
+                    <label for="" class="radio-text">
+                      I need assistance in sourcing a product that is not listed on your website  
+                    </label>
+                  </div>
+                  <!-- --- -->
+
+                  <div class="col-md-12">
+                    <!-- Inquiry Type Dropdown -->
+                    <select class="form-select form-select-sm mb-3" id="email-subject" name="inquiry_type" onchange="checkEmailSubject()">
+                      <option value="Product Quote">Product quote</option>
+                      <option value="General Inquiry">General inquiry</option>
+                    </select>
+            
+                    <div id="product-container">
+                      <!-- Product Selection Dropdown -->
+                      <select class="form-select" id="product-select" name="product" onchange="updateHiddenProduct()">
+                        <option value="Chlorolab 3+ System">Chlorolab 3+ System</option>
+                        <option value="Oxygraph+ System">Oxygraph+ System</option>
+                        <option value="FMS 2+">FMS 2+</option>
+                        <option value="Oxyview 1 System">Oxyview 1 System</option>
+                        <option value="Chloroview 1 System">Chloroview 1 System</option>
+                        <option value="Handy PEA+">Handy PEA+</option>
+                        <option value="CL-01">CL-01</option>
+                        <option value="Chlorolab 2+ System">Chlorolab 2+ System</option>
+                      </select>
+                    </div>
+            
+                    <!-- Hidden input to ensure the product value is always sent -->
+                    <input type="hidden" id="hidden-product" name="product" value="">
+                  </div>
+            
+                  <!-- <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+                  </div> -->
+            
+                  <input type="hidden" name="redirect" value="https://seimex.co.za/">
+                  <div class="h-captcha" data-captcha="true"></div>
+            
                   <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+            
+            <script>
+              function checkEmailSubject() {
+                let subject = document.getElementById("email-subject").value;
+                let productContainer = document.getElementById("product-container");
+                let productSelect = document.getElementById("product-select");
+                let hiddenProduct = document.getElementById("hidden-product");
+            
+                if (subject === "General Inquiry") {
+                  productContainer.style.display = "none"; // Hide dropdown
+                  productSelect.disabled = true; // Disable selection
+                  hiddenProduct.value = "N/A"; // Set hidden field to "N/A" so it's still submitted
+                } else {
+                  productContainer.style.display = "block"; // Show dropdown
+                  productSelect.disabled = false; // Enable selection
+                  hiddenProduct.value = productSelect.value; // Set hidden field to selected product
+                }
+              }
+            
+              function updateHiddenProduct() {
+                let productSelect = document.getElementById("product-select");
+                let hiddenProduct = document.getElementById("hidden-product");
+                hiddenProduct.value = productSelect.value; // Update hidden field with selected product
+              }
+            
+              // Ensure correct state on page load
+              document.addEventListener("DOMContentLoaded", checkEmailSubject);
+            </script>
+            
+            <!-- SweetAlert Message -->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+              document.getElementById("contact-form-element").addEventListener("submit", function (event) {
+                event.preventDefault();
+                Swal.fire({
+                  title: "Success",
+                  text: "Message sent successfully",
+                  icon: "success"
+                }).then(() => {
+                  event.target.submit();
+                });
+              });
+            </script>
+
                 </div>
               </div>
             </form>
@@ -697,9 +834,13 @@
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6 footer-about">
           <!-- <h3>SEIMEX</h3> -->
-          <h3>
+          <!-- <h3>
             <b>SEIMEX</b>
-          </h3>
+          </h3> -->
+          <a href="#">
+            <img src="./assets/img/icons/logo2.jpg" class="logo" alt="">
+            </a>
+          
           <div class="footer-contact pt-3">
             <p class="mt-3">
               <strong>Phone:</strong>
@@ -716,54 +857,25 @@
           </div>
         </div>
 
-        <!-- <div class="col-lg-3 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li>
-              <a href="#about">About us</a>
-            </li>
-
-            <li>
-              <a href="#ops">Business operations</a>
-            </li>
-            <li>
-              <a href="#services">Key Offerings</a>
-            </li>
-            <!-- <li> -->
-              <!-- <a href="#products">Products</a>
-            </li>
-            <li>
-              <a href="#gallery">Gallery</a>
-            </li>
-            <li>
-              <a href="#partnerships">Partnerships</a>
-            </li> --
-          </ul>
-        </div> -->
-<!-- 
-        <div class="col-lg-3 col-md-3 footer-links">
-          <h4></h4>
-          <ul>
-            <li>
-              <a href="#products">Products</a>
-            </li>
-            <li>
-              <a href="#gallery">Gallery</a>
-            </li>
-            <li>
-              <a href="#partnerships">Partnerships</a>
-            </li>
-          </ul>
-        </div> -->
-
         <style>
+            footer .logo{
+                width:120px;
+                height:50px;
+                object-fit: cover;
+            }
+
+            footer h4{
+              color: black;
+            padding:0; 
+
+            }
+
           #useful h4{
             padding:0; 
           }
 
           #useful ul{
-            padding:10px; 
-
+            padding:10px 12px; 
           }
         </style>
         <div id="useful" class="col-lg-6 col-md-3 footer-links">
@@ -803,17 +915,36 @@
             <li>Monday to Friday, 09:00 - 17:00</li>
             <li>Saturday, 09:00 - 13:00</li>
           </ul>
-
+<!-- 
           <p class="m-2">
-            © 2025 SEIMEX
+            © <span id="year"></span> SEIMEX
             <br />
-            <!-- (Scientific Equipment Importers and Exporters)
-            <br /> -->
+            (Scientific Equipment Importers and Exporters)
+            <br />
             <span>All Rights Reserved</span>
-          </p>
+          </p> -->
+          
+          
+          <script>
+            // Get the current year and update the span
+            document.getElementById("year").textContent = new Date().getFullYear();
+          </script>
+          </div>
         </div>
+
+  <div class="container copyright text-center mt-4">
+  
+    <div class="credits">
+        Scientific Equipment Importers and Exporters (SEIMEX) } 2024
       </div>
+
+    <div class="credits">
+      Powered by <a href="https://devtechinnovations.co.za/">DevTech Innovations</a>
     </div>
+  </div>
+        
+    </div>
+   
   </footer>
   <!-- -------------------------------------- -->
 
@@ -823,7 +954,7 @@
   </a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
