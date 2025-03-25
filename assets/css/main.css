@@ -1805,10 +1805,45 @@
     color: var(--accent-color);
   }
   
-  /*--------------------------------------------------------------
-  # Starter Section Section
-  --------------------------------------------------------------*/
-  /* .starter-section { */
-    /* Add your styles here */
-  /* } */
+  ::placeholder {
+    color: #6c757d !important; /* Adjust to your preferred color */
+    font-size: 16px !important; /* Adjust to your preferred size */
+    font-family: Arial, sans-serif !important; /* Ensure consistency */
+    opacity: 1 !important; /* Ensure full visibility */
+  }
   
+  /* For cross-browser compatibility */
+  :-ms-input-placeholder {
+    color: #6c757d !important;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #6c757d !important;
+  }
+
+  .form-control {
+    height: 48px; /* Adjust as needed */
+    border-radius: 8px !important; /* Ensures consistent rounded corners */
+    font-size: 16px; /* Makes text uniform */
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding doesn’t affect height */
+    border: 1px solid #ccc; /* Default border */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border: 1px solid #9ab633!important; /* Ensures the same focus border color */
+    box-shadow: none; /* Optional glow effect */
+    outline: none; /* Removes default browser outline */
+  }
+  
+/* Removes inner arrows (spinners) on number inputs for consistency */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
