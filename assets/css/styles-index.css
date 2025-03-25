@@ -81,7 +81,6 @@ For index.html
 
 .footer .footer-links ul a{
   color:rgb(0, 0, 0); 
-  text-decoration: underline;
 }
 
 .footer .social-links a:hover {
@@ -94,10 +93,9 @@ footer a{
 }
 footer a:hover{
   color:rgb(0, 0, 0); 
-  text-decoration: underline;
+}
+#footer {
+  border-top:  1px solid color-mix(in srgb, var(--default-color), transparent 90%); /* Adjust thickness and color */
 }
 
-footer .footer-newsletter{
-  margin-bottom:20px; 
-}
 /* --------------------------------------------- */
