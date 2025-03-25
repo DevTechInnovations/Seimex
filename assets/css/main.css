@@ -1132,13 +1132,18 @@
     max-width: 90%;
     transition: 0.3s;
     opacity: 0.5;
-    filter: grayscale(100);
+   
   }
   
   .clients .client-logo img:hover {
     filter: none;
     opacity: 1;
   }
+  
+  .clients.section.light-background {
+    background-color: white;
+  }
+  
   
   @media (max-width: 640px) {
     .clients .client-logo img {
