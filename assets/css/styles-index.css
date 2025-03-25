@@ -74,7 +74,6 @@ For index.html
 
 /* FOOTER */
 .footer {
-  /* background-color: #7ac0a1;       */
   background-color: #ffffff;      
   color:black; 
 }
@@ -84,8 +83,8 @@ For index.html
 }
 
 .footer .social-links a:hover {
-  color:rgb(0, 0, 0); 
-  border-color: white
+  color: #9ab633; 
+  border-color: #9ab633;
 }
 
 footer a{
