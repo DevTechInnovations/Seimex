@@ -618,137 +618,125 @@
             </div>
           </div>
 
-          <!-- col2 -->
-          <div class="col-lg-6">
-            <div id="contact-form">
-              <form id="contact-form-element" action="https://api.web3forms.com/submit" method="POST" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                <input type="hidden" name="access_key" value="8de7e4bb-2642-490b-8efa-47a6b8dcecaf">
-            
-                <div class="row gy-4">
-                  <label for="">Name</label>
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required />
-                  </div>
+       <!-- col2 -->
+<div class="col-lg-6">
+  <div id="contact-form">
+    <form id="contact-form-element" action="https://api.web3forms.com/submit" method="POST" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+      <input type="hidden" name="access_key" value="8de7e4bb-2642-490b-8efa-47a6b8dcecaf">
 
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Surname" required />
-                  </div>
+      <div class="row gy-4">
+        <label for="">Name</label>
+        <div class="col-md-6">
+          <input type="text" name="first_name" class="form-control" placeholder="Your Name" required />
+        </div>
 
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Title (example, Mr)" required />
-                  </div>
-                  <!-- --- -->
-            
-                  <label for="">Contact details</label>
-                  <div class="col-md-6">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required />
-                  </div>
+        <div class="col-md-6">
+          <input type="text" name="surname" class="form-control" placeholder="Your Surname" required />
+        </div>
 
-                  <div class="col-md-6">
-                    <input type="text" class="form-control" name="" placeholder="Your contact number" required />
-                  </div>
-                  <!-- --- -->
-            
-                  <label for="">Company</label>
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Company name" required />
-                  </div>
+        <div class="col-md-6">
+          <input type="text" name="title" class="form-control" placeholder="Your Title (example, Mr)" required />
+        </div>
+        <!-- --- -->
 
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Department" required />
-                  </div>
-                  <!-- --- -->
+        <label for="">Contact details</label>
+        <div class="col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+        </div>
 
-                  <label for="">Address</label>
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Country" required />
-                  </div>
+        <div class="col-md-6">
+          <input type="number" class="form-control" name="contact_number" placeholder="Your contact number" required />
+        </div>
+        <!-- --- -->
 
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="City" required />
-                  </div>
+        <label for="">Company</label>
+        <div class="col-md-6">
+          <input type="text" name="company_name" class="form-control" placeholder="Company name" required />
+        </div>
 
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Area code" required />
-                  </div>
+        <div class="col-md-6">
+          <input type="text" name="department" class="form-control" placeholder="Department" required />
+        </div>
+        <!-- --- -->
 
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Street address" required />
-                  </div>
-                  <!-- --- -->
+        <label for="">Address</label>
+        <div class="col-md-6">
+          <input type="text" name="country" class="form-control" placeholder="Country" required />
+        </div>
 
-                  <label for="">What is your planned application?</label>
-                  <!-- <div class="col-md-6"> -->
-                    <!-- <textarea name="" id=""></textarea> -->
-                    <!-- <input type="text" name="name" class="form-control" placeholder="Street address" required /> -->
-                  <!-- </div> -->
+        <div class="col-md-6">
+          <input type="text" name="city" class="form-control" placeholder="City" required />
+        </div>
 
-                  <div class="col-md-12">
-                    <textarea class="form-control" name="message" rows="4" placeholder="" required></textarea>
-                  </div>
-                  <!-- --- -->
+        <div class="col-md-6">
+          <input type="number" name="area_code" class="form-control" placeholder="Area code" required />
+        </div>
 
-                  <label for="">Where are you in the purchase process</label>
-                  
-                  <style>
-                    .radio{
-                        width:initial;
-                        display: inline;
-                    }
+        <div class="col-md-6">
+          <input type="text" name="street_address" class="form-control" placeholder="Street address" required />
+        </div>
+        <!-- --- -->
 
-                    .radio-text{
-                      font-size: 14px;
-                    }
-                </style>
-                  <div class="col-md-12">
-                    <input type="checkbox" name="name" class="form-control radio" placeholder="Street address" required />
-                    <label for="" class="radio-text">Already have funding </label>
-                  </div>
-                  <div class="col-md-12">
-                    <input type="checkbox" name="name" class="form-control radio" placeholder="Street address" required />
-                    <label for="" class="radio-text">
-                      I need assistance in sourcing a product that is not listed on your website  
-                    </label>
-                  </div>
-                  <!-- --- -->
+        <label for="">What is your planned application?</label>
+        <div class="col-md-12">
+          <textarea class="form-control" name="planned_application" rows="4" placeholder="" required></textarea>
+        </div>
+        <!-- --- -->
 
-                  <div class="col-md-12">
-                    <!-- Inquiry Type Dropdown -->
-                    <select class="form-select form-select-sm mb-3" id="email-subject" name="inquiry_type" onchange="checkEmailSubject()">
-                      <option value="Product Quote">Product quote</option>
-                      <option value="General Inquiry">General inquiry</option>
-                    </select>
-            
-                    <div id="product-container">
-                      <!-- Product Selection Dropdown -->
-                      <select class="form-select" id="product-select" name="product" onchange="updateHiddenProduct()">
-                        <option value="Chlorolab 3+ System">Chlorolab 3+ System</option>
-                        <option value="Oxygraph+ System">Oxygraph+ System</option>
-                        <option value="FMS 2+">FMS 2+</option>
-                        <option value="Oxyview 1 System">Oxyview 1 System</option>
-                        <option value="Chloroview 1 System">Chloroview 1 System</option>
-                        <option value="Handy PEA+">Handy PEA+</option>
-                        <option value="CL-01">CL-01</option>
-                        <option value="Chlorolab 2+ System">Chlorolab 2+ System</option>
-                      </select>
-                    </div>
-            
-                    <!-- Hidden input to ensure the product value is always sent -->
-                    <input type="hidden" id="hidden-product" name="product" value="">
-                  </div>
-            
-                  <!-- <div class="col-md-12">
-                    <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
-                  </div> -->
-            
-                  <input type="hidden" name="redirect" value="https://seimex.co.za/">
-                  <div class="h-captcha" data-captcha="true"></div>
-            
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
-            </div>
-            
+        <label for="">Where are you in the purchase process</label>
+        <style>
+          .radio {
+            width: initial;
+            display: inline;
+          }
+
+          .radio-text {
+            font-size: 14px;
+          }
+        </style>
+        <div class="col-md-12">
+          <input type="checkbox" name="funding_status[]" value="Already have funding" class="radio" />
+          <label class="radio-text">Already have funding</label>
+        </div>
+        <div class="col-md-12">
+          <input type="checkbox" name="funding_status[]" value="Need assistance sourcing a product" class="radio" />
+          <label class="radio-text">
+            I need assistance in sourcing a product that is not listed on your website  
+          </label>
+        </div>
+        <!-- --- -->
+
+        <div class="col-md-12">
+          <!-- Inquiry Type Dropdown -->
+          <select class="form-select form-select-sm mb-3" id="email-subject" name="inquiry_type" onchange="checkEmailSubject()">
+            <option value="Product Quote">Product quote</option>
+            <option value="General Inquiry">General inquiry</option>
+          </select>
+
+          <div id="product-container">
+            <!-- Product Selection Dropdown -->
+            <select class="form-select" id="product-select" name="product">
+              <option value="Chlorolab 3+ System">Chlorolab 3+ System</option>
+              <option value="Oxygraph+ System">Oxygraph+ System</option>
+              <option value="FMS 2+">FMS 2+</option>
+              <option value="Oxyview 1 System">Oxyview 1 System</option>
+              <option value="Chloroview 1 System">Chloroview 1 System</option>
+              <option value="Handy PEA+">Handy PEA+</option>
+              <option value="CL-01">CL-01</option>
+              <option value="Chlorolab 2+ System">Chlorolab 2+ System</option>
+            </select>
+          </div>
+        </div>
+
+        <input type="hidden" name="redirect" value="https://seimex.co.za/">
+        <div class="h-captcha" data-captcha="true"></div>
+
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</div>
+
             <script>
               function checkEmailSubject() {
                 let subject = document.getElementById("email-subject").value;
