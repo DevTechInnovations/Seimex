@@ -567,8 +567,8 @@
   # Global Footer
   --------------------------------------------------------------*/
   .footer {
-    color: white;
-    background-color: var(--background-color);
+    color: black;
+    background-color: white;
     font-size: 14px;
     position: relative;
   }
