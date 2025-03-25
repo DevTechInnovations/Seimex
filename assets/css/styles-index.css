@@ -43,18 +43,18 @@ For index.html
 /* SECTIONS */
 /* hero */
 .btn-get-started{
-  background-color: #7ac0a1;  
+  background-color: #9ab633;  
   color:white;     
 }
 
 #hero .contact-btn{
   background-color: white;
-  color:#7ac0a1; 
+  color:#9ab633; 
 }
 
 /* about */
 .section-title h2::after {
-  background-color: #7ac0a1;      
+  background-color: #9ab633;      
 }
 .section-title {
   padding-bottom:20px;
