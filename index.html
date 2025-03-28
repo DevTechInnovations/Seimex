@@ -139,9 +139,10 @@
                     <img src="assets/img/card (1).jpg" class="img-fluid" alt="" />
                   </div>
 
-                  <h4 class="title my-3">
+                  <!-- <h4 class="title my-3">
                     Importing Scientific Equipment:
-                  </h4>
+                  </h4> -->
+                  <h4 class="title my-3">Scientific Equipment: </h4>
 
                   <p>
                     Supplying high-quality scientific tools for laboratories and research centers.
@@ -157,8 +158,8 @@
                     <img src="assets/img/card (2).jpg" class="img-fluid" alt="" />
                   </div>
 
-                  <h4 class="title my-3">Medical Supplies Distribution:</h4>
-
+                  <!-- <h4 class="title my-3">Medical Supplies Distribution:  </h4> -->
+                  <h4 class="title my-3">Medical Supplies:</h4>
                   <p>
                     Full distribution services for scientific equipment and
                     select medical supplies.
@@ -166,8 +167,6 @@
                 </div>
               </div>
             </div>
-
-   
 
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
               <div class="service-item d-flex position-relative h-100">
@@ -178,8 +177,9 @@
 
                   <h4 class="title my-3">Strategic Partnerships:</h4>
 
+
                   <p>
-                    Officially representing Hansatech, PP Systems, and Medinox, providing scientific and technological solutions.
+                    Representing Hansatech, PP Systems, and Medinox.
                   </p>
                 </div>
               </div>
@@ -715,15 +715,28 @@
           }
         </style>
         <div class="col-md-12">
-          <input type="checkbox" name="funding_status[]" value="Already have funding" class="radio" />
-          <label class="radio-text">I already have funding</label>
+          <input type="radio" name="funding_status[]" value="Already have funding" class="radio" />
+          <label class="radio-text">I already have funding and ready to purchase</label>
         </div>
         <div class="col-md-12">
+          <input type="radio" name="funding_status[]" value="Already have funding" class="radio" />
+          <label class="radio-text">Require quote for funding application</label>
+        </div>
+        <div class="col-md-12">
+          <input type="radio" name="funding_status[]" value="Already have funding" class="radio" />
+          <label class="radio-text">General interest</label>
+        </div>
+        <div class="col-md-12">
+          <input type="radio" name="funding_status[]" value="Already have funding" class="radio" />
+          <label class="radio-text">Other</label>
+        </div>
+
+        <!-- <div class="col-md-12">
           <input type="checkbox" name="funding_status[]" value="Need assistance sourcing a product" class="radio" />
           <label class="radio-text">
             I need assistance in sourcing a product that is not listed on your website 
           </label>
-        </div>
+        </div> -->
         <!-- --- -->
 
         <div class="col-md-12">
@@ -750,6 +763,12 @@
 
         <input type="hidden" name="redirect" value="https://seimex.co.za/">
         <div class="h-captcha" data-captcha="true"></div>
+
+
+
+        <div class="col">
+          <input type="text" name="street_address" class="form-control" placeholder=""  />
+        </div>
 
         <button type="submit">Send Message</button>
       </div>
