@@ -1822,7 +1822,7 @@
   }
 
   .form-control {
-    height: 48px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
     border-radius: 8px !important; /* Ensures consistent rounded corners */
     font-size: 16px; /* Makes text uniform */
     padding: 10px;
@@ -1846,4 +1846,41 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.contact select.form-select {
+  height: 40px; /* Match the height of text fields */
+  font-size: 16px; /* Same font size */
+  padding: 10px; /* Similar padding */
+  border-radius: 8px; /* Match border-radius */
+  border: 1px solid #ced4da; /* Bootstrap-like border */
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact select:focus {
+  border: 1px solid #9ab633!important; /* Ensures the same focus border color */
+  box-shadow: none; /* Optional glow effect */
+  outline: none; /* Removes default browser outline */
+}
+.contact-dropdown {
+  color: #6c757d; /* Default grey */
+}
+
+/* When a real value is selected, turn text black */
+.contact-dropdown option {
+  color: #000;
+}
+
+/* Keep the first option (placeholder) grey */
+.contact-dropdown option[disabled] {
+  color: #6c757d;
+}
+.contact-dropdown {
+  text-align: left;
+  text-align-last: left; /* Works for most browsers */
+  padding: 10px;
+  height: 40px;
+  font-size: 16px;
+  background-color: white;
 }

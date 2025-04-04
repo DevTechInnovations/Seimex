@@ -1262,34 +1262,21 @@
 
         <div class="col-md-12">
           <!-- Inquiry Type Dropdown -->
-          <select class="form-select form-select-sm mb-3" id="email-subject" name="inquiry_type" onchange="checkEmailSubject()">
+          <select class="form-select contact-dropdown" id="email-subject" name="inquiry_type" onchange="checkEmailSubject()">
+            <option value="" disabled selected hidden>Select An Inquiry Type</option>
             <option value="Product Quote">Product Quote</option>
             <option value="General Inquiry">General Inquiry</option>
           </select>
-
-          <div id="product-container">
-            <!-- Product Selection Dropdown -->
-            <select class="form-select" id="product-select" name="product">
-              <option value="Chlorolab 3+ System">Chlorolab 3+ System</option>
-              <option value="Oxygraph+ System">Oxygraph+ System</option>
-              <option value="FMS 2+">FMS 2+</option>
-              <option value="Oxyview 1 System">Oxyview 1 System</option>
-              <option value="Chloroview 1 System">Chloroview 1 System</option>
-              <option value="Handy PEA+">Handy PEA+</option>
-              <option value="CL-01">CL-01</option>
-              <option value="Chlorolab 2+ System">Chlorolab 2+ System</option>
-            </select>
-          </div>
         </div>
+
+          <label for="">What product are you interested in?</label>
+          <div class="col-md-12">
+            <textarea class="form-control" name="planned_application" rows="4" placeholder="" required></textarea>
+          </div>
+       
 
         <input type="hidden" name="redirect" value="https://seimex.co.za/">
         <div class="h-captcha" data-captcha="true"></div>
-
-
-
-        <div class="col">
-          <input type="text" name="street_address" class="form-control" placeholder=""  />
-        </div>
 
         <button type="submit">Send Message</button>
       </div>
